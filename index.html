@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/library-image-logo.png"
+      type="image/x-icon" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/library-image-logo.png" alt="logo image" />
+          <h1>My Library</h1>
+        </div>
+
+        <button class="btn1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512">
+            <defs>
+              <style>
+                .fa-secondary {
+                  opacity: 0.4;
+                }
+              </style>
+            </defs>
+            <path class="fa-primary" d="" />
+            <path
+              class="fa-secondary"
+              d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+          </svg>
+          ADD BOOK
+        </button>
+      </nav>
+
+      <div class="hero" id="book-container">
+        <!-- <div class="book-card">
+            <div class="screen">
+              <h3 class="title"></h3>
+            </div>
+            <p class="author"></p>
+            <p class="releaseDate"></p>
+          </div> -->
+      </div>
+    </div>
+
+    <div class="add-book active">
+      <button class="btn3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 384 512">
+          <path
+            d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+        </svg>
+      </button>
+
+      <div class="form-container">
+        <h3>Book info</h3>
+        <form class="new-book-form" id="add-book-form">
+          <div class="title">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title..."
+              required />
+          </div>
+
+          <div class="author">
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author..."
+              required />
+          </div>
+
+          <div class="page">
+            <input
+              type="number"
+              id="page"
+              name="page"
+              placeholder="Page..."
+              max="2000"
+              required />
+          </div>
+
+          <div class="bookInfoButton">
+            <button class="btn2" type="submit" value="Add Book">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512">
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+              </svg>
+              SUBMIT
+            </button>
+
+            <div class="status">
+              <input type="checkbox" class="input" id="status" />
+              <label for="status" class="label">
+                <div class="circle"></div>
+              </label>
+              <p class="or">have you read it or not?</p>
+            </div>
+          </div>
+          <!-- 
+            <input type="submit" value="Add Book" /> -->
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
